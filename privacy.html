@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>개인정보처리방침 | 틈새알바</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+                   "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #1a1a1a;
+      background: #ffffff;
+      padding: 0 0 80px;
+    }
+
+    .header {
+      background: #5B4FD8;
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    .header .app-name {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      opacity: 0.8;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .header .effective-date {
+      font-size: 13px;
+      opacity: 0.75;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .toc {
+      background: #f5f4ff;
+      border: 1px solid #d8d5ff;
+      border-radius: 10px;
+      padding: 24px 28px;
+      margin: 36px 0;
+    }
+    .toc h2 {
+      font-size: 13px;
+      font-weight: 600;
+      color: #5B4FD8;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 14px;
+    }
+    .toc ol {
+      list-style: none;
+      counter-reset: toc;
+    }
+    .toc ol li {
+      counter-increment: toc;
+      padding: 3px 0;
+      font-size: 14px;
+    }
+    .toc ol li::before {
+      content: counter(toc) ". ";
+      color: #5B4FD8;
+      font-weight: 600;
+    }
+    .toc a { color: #3b30b0; text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+
+    section { margin-top: 48px; }
+    section:first-of-type { margin-top: 40px; }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #1a1a1a;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #5B4FD8;
+      margin-bottom: 20px;
+    }
+    h2 .sec-num {
+      color: #5B4FD8;
+      margin-right: 6px;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #2d2d2d;
+      margin: 24px 0 10px;
+    }
+
+    p { margin-bottom: 14px; color: #333; }
+
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 14px;
+    }
+    ul li, ol li {
+      margin-bottom: 6px;
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin: 16px 0 20px;
+    }
+    th {
+      background: #f0eeff;
+      color: #3b30b0;
+      font-weight: 600;
+      text-align: left;
+      padding: 10px 14px;
+      border: 1px solid #d8d5ff;
+    }
+    td {
+      padding: 9px 14px;
+      border: 1px solid #e5e5e5;
+      vertical-align: top;
+    }
+    tr:nth-child(even) td { background: #fafafa; }
+
+    .highlight-box {
+      background: #f5f4ff;
+      border-left: 4px solid #5B4FD8;
+      border-radius: 0 8px 8px 0;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+    .highlight-box p { margin-bottom: 0; color: #2d2d2d; font-size: 14px; }
+
+    .warning-box {
+      background: #fff8e6;
+      border-left: 4px solid #f0a500;
+      border-radius: 0 8px 8px 0;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+    .warning-box p { margin-bottom: 0; font-size: 14px; color: #5a3e00; }
+
+    .contact-card {
+      background: #1a1a1a;
+      color: #fff;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-top: 20px;
+    }
+    .contact-card h3 { color: #aaa9ff; margin-top: 0; margin-bottom: 16px; }
+    .contact-card p { color: #ccc; margin-bottom: 6px; font-size: 14px; }
+    .contact-card a { color: #aaa9ff; }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="app-name">틈새알바 · Tumsae Alba</div>
+  <h1>개인정보처리방침</h1>
+  <div class="effective-date">시행일: 2025년 __ 월 __ 일 &nbsp;|&nbsp; 버전 1.0</div>
+</div>
+
+<div class="container">
+
+  <div class="highlight-box">
+    <p>
+      틈새알바(이하 "서비스")는 「개인정보 보호법」, 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」을
+      준수하며, 이용자의 개인정보를 소중히 보호합니다.
+      본 방침은 서비스 이용 중 수집되는 개인정보의 처리 방법을 안내합니다.
+    </p>
+  </div>
+
+  <nav class="toc">
+    <h2>목차</h2>
+    <ol>
+      <li><a href="#s1">수집하는 개인정보 항목 및 수집 방법</a></li>
+      <li><a href="#s2">개인정보의 처리 목적</a></li>
+      <li><a href="#s3">개인정보의 보유 및 이용 기간</a></li>
+      <li><a href="#s4">개인정보의 제3자 제공</a></li>
+      <li><a href="#s5">개인정보 처리 위탁</a></li>
+      <li><a href="#s6">이용자의 권리와 행사 방법</a></li>
+      <li><a href="#s7">자동 수집 장치 (위치·카메라·알림)</a></li>
+      <li><a href="#s8">개인정보의 파기</a></li>
+      <li><a href="#s9">개인정보 보호 조치</a></li>
+      <li><a href="#s10">아동 개인정보 보호</a></li>
+      <li><a href="#s11">방침의 변경</a></li>
+      <li><a href="#s12">개인정보 보호 책임자 및 문의</a></li>
+    </ol>
+  </nav>
+
+
+  <!-- 1 -->
+  <section id="s1">
+    <h2><span class="sec-num">1.</span> 수집하는 개인정보 항목 및 수집 방법</h2>
+
+    <h3>가. 회원가입 및 서비스 이용 시 수집</h3>
+    <table>
+      <thead>
+        <tr><th>구분</th><th>수집 항목</th><th>필수/선택</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>회원가입</td><td>이메일 주소, 비밀번호(암호화 저장), 이름(닉네임)</td><td>필수</td></tr>
+        <tr><td>구직자 프로필</td><td>나이, 성별, 희망 업종, 근무 가능 요일·시간, 거주 지역(시/구)</td><td>선택</td></tr>
+        <tr><td>지원·매칭</td><td>지원 이력, AI 매칭 점수, 체크인·체크아웃 시각</td><td>자동 생성</td></tr>
+        <tr><td>고용주(Phase 2)</td><td>사업자등록번호, 상호명, 대표자명, 연락처</td><td>필수</td></tr>
+      </tbody>
+    </table>
+
+    <h3>나. 서비스 이용 중 자동 수집</h3>
+    <ul>
+      <li>기기 정보: 기기 모델명, OS 버전, 앱 버전, 기기 식별자(IDFV)</li>
+      <li>접속 정보: 접속 일시, 서비스 이용 기록</li>
+      <li>위치 정보: 앱 실행 중 근처 공고 추천 시 (일시적, 서버 저장 안 함)</li>
+    </ul>
+
+    <h3>다. 수집 방법</h3>
+    <ul>
+      <li>앱 내 회원가입·프로필 입력 화면</li>
+      <li>QR 코드 체크인 시 자동 기록</li>
+      <li>고객 문의 이메일을 통한 수집</li>
+    </ul>
+  </section>
+
+
+  <!-- 2 -->
+  <section id="s2">
+    <h2><span class="sec-num">2.</span> 개인정보의 처리 목적</h2>
+    <table>
+      <thead>
+        <tr><th>처리 목적</th><th>사용 정보</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>회원 가입·인증 및 본인 확인</td><td>이메일, 이름</td></tr>
+        <tr><td>AI 기반 단기알바 매칭 및 추천</td><td>프로필 정보, 위치(일시), 지원 이력</td></tr>
+        <tr><td>QR 출퇴근 기록 및 급여 산정 지원</td><td>체크인·체크아웃 시각, 기기 정보</td></tr>
+        <tr><td>AI 업무 가이드 자동 생성</td><td>매칭된 공고 정보</td></tr>
+        <tr><td>Push 알림 발송</td><td>기기 토큰, 알림 수신 동의 여부</td></tr>
+        <tr><td>서비스 품질 개선 및 오류 대응</td><td>접속 로그, 기기 정보</td></tr>
+        <tr><td>고객 문의 응대</td><td>이메일, 문의 내용</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+
+  <!-- 3 -->
+  <section id="s3">
+    <h2><span class="sec-num">3.</span> 개인정보의 보유 및 이용 기간</h2>
+    <table>
+      <thead>
+        <tr><th>항목</th><th>보유 기간</th><th>근거</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>회원 계정 정보</td><td>회원 탈퇴 후 즉시 파기 (단, 아래 예외 적용)</td><td>서비스 계약</td></tr>
+        <tr><td>전자상거래 계약·청약철회 기록</td><td>5년</td><td>전자상거래 등에서의 소비자보호에 관한 법률</td></tr>
+        <tr><td>대금결제·재화 공급 기록</td><td>5년</td><td>동 법률</td></tr>
+        <tr><td>소비자 불만·분쟁 처리 기록</td><td>3년</td><td>동 법률</td></tr>
+        <tr><td>접속 로그·접속 IP</td><td>3개월</td><td>통신비밀보호법</td></tr>
+        <tr><td>QR 출퇴근 기록</td><td>근무 종료 후 1년</td><td>근로기준법 보존 원칙 준용</td></tr>
+      </tbody>
+    </table>
+    <div class="highlight-box">
+      <p>회원 탈퇴 요청 시 위 법정 보존 기간에 해당하는 정보를 제외하고 즉시 파기합니다.</p>
+    </div>
+  </section>
+
+
+  <!-- 4 -->
+  <section id="s4">
+    <h2><span class="sec-num">4.</span> 개인정보의 제3자 제공</h2>
+    <p>
+      서비스는 원칙적으로 이용자의 개인정보를 제3자에게 제공하지 않습니다.
+      다만, 아래의 경우는 예외로 합니다.
+    </p>
+    <ul>
+      <li>이용자가 사전에 동의한 경우</li>
+      <li>법령에 의해 제공이 요구되는 경우</li>
+      <li><strong>매칭 성사 시 고용주에게 제공되는 정보:</strong>
+        구직자의 이름(닉네임), 연락처(선택 동의 시), 체크인·체크아웃 기록.
+        이 경우 이용자에게 사전 고지 후 동의를 받습니다.</li>
+    </ul>
+  </section>
+
+
+  <!-- 5 -->
+  <section id="s5">
+    <h2><span class="sec-num">5.</span> 개인정보 처리 위탁</h2>
+    <p>서비스는 원활한 운영을 위해 아래와 같이 처리 업무를 위탁합니다.</p>
+    <table>
+      <thead>
+        <tr><th>수탁 업체</th><th>위탁 업무</th><th>보유 기간</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Supabase, Inc.</td>
+          <td>데이터베이스 저장·관리 (미국 소재 서버)</td>
+          <td>서비스 이용 기간 또는 위탁 계약 종료 시</td>
+        </tr>
+        <tr>
+          <td>Anthropic, PBC</td>
+          <td>AI 매칭 및 업무 가이드 생성 (Claude API)</td>
+          <td>API 처리 후 즉시 삭제 (Anthropic 정책 준수)</td>
+        </tr>
+        <tr>
+          <td>Apple Inc.</td>
+          <td>Push 알림 발송 (APNs)</td>
+          <td>알림 전달 후 즉시 삭제</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="warning-box">
+      <p>
+        해외 이전: Supabase, Anthropic은 미국 소재 서버를 이용합니다.
+        「개인정보 보호법」 제28조의8에 따라 이전되는 정보, 이전 국가, 이전 일시·방법,
+        이전받는 자 정보를 공개하며, 이용자는 이전을 거부할 권리가 있습니다.
+        거부 시 서비스 이용이 제한될 수 있습니다.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- 6 -->
+  <section id="s6">
+    <h2><span class="sec-num">6.</span> 이용자의 권리와 행사 방법</h2>
+    <p>이용자는 언제든지 다음 권리를 행사할 수 있습니다.</p>
+    <ul>
+      <li><strong>열람권:</strong> 자신의 개인정보 처리 현황 조회</li>
+      <li><strong>정정·삭제권:</strong> 오류가 있는 정보 정정 요청 또는 삭제 요청</li>
+      <li><strong>처리 정지권:</strong> 개인정보 처리 일시 정지 요청</li>
+      <li><strong>동의 철회권:</strong> 수집·이용 동의 철회 (회원 탈퇴 포함)</li>
+      <li><strong>이동권:</strong> 보유 중인 정보를 기계 판독 가능한 형태로 제공 요청</li>
+    </ul>
+    <h3>행사 방법</h3>
+    <ul>
+      <li>앱 내 설정 → 계정 관리 → 개인정보 요청</li>
+      <li>이메일: <a href="mailto:privacy@tumsaealba.com">privacy@tumsaealba.com</a></li>
+    </ul>
+    <p>요청 접수 후 <strong>10일 이내</strong>에 처리 결과를 안내합니다.</p>
+  </section>
+
+
+  <!-- 7 -->
+  <section id="s7">
+    <h2><span class="sec-num">7.</span> 자동 수집 장치 (위치·카메라·알림)</h2>
+
+    <h3>위치 정보</h3>
+    <ul>
+      <li><strong>사용 목적:</strong> 근처 단기알바 공고 추천</li>
+      <li><strong>수집 시점:</strong> 앱 실행 중 공고 검색 시 (백그라운드 수집 안 함)</li>
+      <li><strong>서버 저장 여부:</strong> 저장하지 않음 (디바이스 내에서만 처리)</li>
+      <li><strong>거부 방법:</strong> iOS 설정 → 개인정보 보호 → 위치 서비스 → 틈새알바 → 안함</li>
+    </ul>
+
+    <h3>카메라</h3>
+    <ul>
+      <li><strong>사용 목적:</strong> QR 코드 출퇴근 체크인 인식</li>
+      <li><strong>수집 시점:</strong> 이용자가 체크인 버튼을 탭할 때만 활성화</li>
+      <li><strong>사진 저장 여부:</strong> 저장하지 않음</li>
+      <li><strong>거부 방법:</strong> iOS 설정 → 개인정보 보호 → 카메라 → 틈새알바 → 끔</li>
+    </ul>
+
+    <h3>Push 알림</h3>
+    <ul>
+      <li><strong>사용 목적:</strong> 새 공고·매칭 결과·고용주 메시지 알림</li>
+      <li><strong>동의:</strong> 앱 최초 실행 시 이용자 동의 획득 후 발송</li>
+      <li><strong>거부 방법:</strong> iOS 설정 → 알림 → 틈새알바 → 알림 허용 끔, 또는 앱 내 설정</li>
+    </ul>
+  </section>
+
+
+  <!-- 8 -->
+  <section id="s8">
+    <h2><span class="sec-num">8.</span> 개인정보의 파기</h2>
+    <p>보유 기간이 경과하거나 처리 목적이 달성된 개인정보는 아래 방법으로 파기합니다.</p>
+    <ul>
+      <li><strong>전자 파일:</strong> 복원 불가능한 방법으로 영구 삭제 (Supabase 레코드 hard delete)</li>
+      <li><strong>출력물:</strong> 해당 없음 (서비스 특성상 출력 없음)</li>
+    </ul>
+    <p>
+      법령에 의해 보존이 필요한 정보는 별도 데이터베이스로 분리하여 보관하며,
+      다른 목적으로 이용하지 않습니다.
+    </p>
+  </section>
+
+
+  <!-- 9 -->
+  <section id="s9">
+    <h2><span class="sec-num">9.</span> 개인정보 보호 조치</h2>
+    <ul>
+      <li><strong>암호화:</strong> 비밀번호는 bcrypt로 해싱 저장. 민감 정보는 전송 시 TLS 1.2 이상 암호화</li>
+      <li><strong>접근 통제:</strong> Supabase Row Level Security(RLS)를 통해 자신의 데이터만 접근 가능</li>
+      <li><strong>접속 기록:</strong> 시스템 접속 기록 보관 및 위·변조 방지 조치</li>
+      <li><strong>외부 공격 대비:</strong> 정기적 보안 취약점 점검 실시</li>
+    </ul>
+  </section>
+
+
+  <!-- 10 -->
+  <section id="s10">
+    <h2><span class="sec-num">10.</span> 아동 개인정보 보호</h2>
+    <div class="warning-box">
+      <p>
+        본 서비스는 <strong>만 14세 이상</strong>을 대상으로 합니다.
+        만 14세 미만 아동의 가입은 허용하지 않으며,
+        만 14세 미만인 것으로 확인된 경우 즉시 계정을 삭제하고 수집된 정보를 파기합니다.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- 11 -->
+  <section id="s11">
+    <h2><span class="sec-num">11.</span> 방침의 변경</h2>
+    <p>
+      법령·서비스 변경에 따라 개인정보처리방침을 개정할 수 있습니다.
+      중요한 변경이 있을 경우 시행 <strong>7일 전</strong> 앱 내 공지 또는
+      가입 이메일을 통해 사전 안내합니다.
+    </p>
+    <p>변경 이력은 본 페이지 하단에서 확인할 수 있습니다.</p>
+    <table>
+      <thead>
+        <tr><th>버전</th><th>시행일</th><th>주요 변경 내용</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>v1.0</td><td>2025. __. __.</td><td>최초 제정</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+
+  <!-- 12 -->
+  <section id="s12">
+    <h2><span class="sec-num">12.</span> 개인정보 보호 책임자 및 문의</h2>
+    <div class="contact-card">
+      <h3>개인정보 보호 책임자 (CPO)</h3>
+      <p>성명: [대표자명 입력]</p>
+      <p>직책: 개인정보 보호 책임자</p>
+      <p>이메일: <a href="mailto:privacy@tumsaealba.com">privacy@tumsaealba.com</a></p>
+      <p>응대 시간: 평일 10:00 ~ 18:00 (공휴일 제외)</p>
+    </div>
+
+    <p style="margin-top: 20px;">
+      개인정보 침해 관련 신고나 상담이 필요하시면 아래 기관에 문의하실 수 있습니다.
+    </p>
+    <ul>
+      <li>개인정보보호위원회 민원 포털: <a href="https://www.privacy.go.kr" target="_blank" rel="noopener">privacy.go.kr</a> / 전화 118</li>
+      <li>경찰청 사이버범죄신고시스템: <a href="https://ecrm.police.go.kr" target="_blank" rel="noopener">ecrm.police.go.kr</a></li>
+    </ul>
+  </section>
+
+
+  <div class="footer">
+    <p>© 2025 틈새알바 | <a href="mailto:support@tumsaealba.com">support@tumsaealba.com</a></p>
+    <p style="margin-top:6px;">본 방침은 한국어를 정본으로 합니다.</p>
+  </div>
+
+</div>
+</body>
+</html>
